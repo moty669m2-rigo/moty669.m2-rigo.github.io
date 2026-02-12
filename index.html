@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Peque Hermosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="pantalla1" class="active">
+        <h1>PARA MI PEQUE HERMOSA ❤️</h1>
+        <img src="Inicio.webp" alt="Nuestra Foto" class="img-romantica"> <div class="envelope-wrapper" onclick="cambiarPantalla(2)">
+            <div class="envelope">
+                <div class="letter">📩</div>
+            </div>
+            <p>Toca la carta para abrirla</p>
+        </div>
+    </section>
+
+    <section id="pantalla2">
+        <h2>Tantos momentos a tu lado</h2>
+        <div class="video-container">
+            <video controls id="miVideo">
+                <source src="Video.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+        <button class="btn-next" onclick="cambiarPantalla(3)">Siguiente</button>
+    </section>
+
+    <section id="pantalla3">
+     <img src="Pagina 2.webp" alt="Recuerdo" class="img-romantica"> <p class="texto-romantico">
+            Hemos tenido tantos momentos, así como buenos o malos, tantas sonrisas, enojos, bromas, lagrimas, abrasos, besos... 
+            cosas que jamás deseo que acaben, porque sí, yo quiero una vida contigo, una familia y entregarte cada parte de mi; 
+            eres mi mundo entero y no quiero que jamás dudes que <strong>TE AMO</strong>.
+        </p>
+        <button class="btn-next" onclick="cambiarPantalla(4)">Siguiente</button>
+    </section>
+
+   <section id="pantalla4">
+    <img src="Imagen 3.webp" alt="Recuerdo" class="img-romantica">
+        <h2>Es por eso que te pregunto...</h2>
+        <button class="btn-next" onclick="cambiarPantalla(5)">Siguiente</button>
+    </section>
+
+    <section id="pantalla5">
+        <img src="Imagen 4.webp" alt="¿?" class="img-romantica"> <h2 class="pregunta">¿Quieres ser mi San Valentin? <span class="heart-anim">❤️</span></h2>
+        <div class="botones-finales">
+            <button id="btnSi" onclick="cambiarPantalla(6)">SÍ</button>
+            <button id="btnNo">No</button>
+        </div>
+    </section>
+
+    <section id="pantalla6">
+        <img src="Ultima foto.webp" alt="¿?" class="img-romantica"> <div class="corazones-background" id="corazonesCont"></div>
+        <h2 class="final-msg">Sabía que dirías que sí, por una vida juntos mi amor, TE AMO</h2>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
